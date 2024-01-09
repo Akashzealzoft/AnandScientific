@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-
 import ModalVideo from "react-modal-video";
 
 const Video = () => {
@@ -14,11 +13,21 @@ const Video = () => {
       <div className="container">
         <SectionTitle
           title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="We at Anand Scientific Company uphold a leading position in Indian markets for our outstanding quality work related to lab equipment. As a trader since 2004, we have been committed to bring the finest grade of equipment of latest technology, standards and needs for the industries, hospitals, research centers and others from varied segments. Our offerings contain Heavy Duty Lab Centrifuge, PH Field Monitor, Water Proof PH Meter, Microprocessor Viscometer, Metallurgical Microscope, Blood Pressure Monitor and more items. Their superior quality features, accurate results, durability and cost-effective prices make these items worth the money."
+          paragraph1="Under the profound leadership of Mr. Ramesh Raja, we are running our business procedures smoothly from local to national areas. A large number of customers are not only appreciating the excellent quality of our work but also vouching for us to many new customers in the field. This way, we are rapidly increasing our network base and presence in markets with time."
+          sectionTeamList={[
+            { id: 1, teamList: "Synchronized work" },
+            { id: 2, teamList: "Professionalism and punctuality" },
+            { id: 3, teamList: "Ethics, integrity and transparency" },
+            { id: 4, teamList: "Effective communication skills" },
+            { id: 5, teamList: "Growth oriented mindset" }
+
+          ]}
+          teamTitle="Our Team"
+          teamDescription="Blessed by a team of self motivated & intelligent people, we have established a reputed position for ourselves in the market. All the team members are well-updated with the market & its constantly changing trends to run trading operations in an efficient & fluent manner. Their main qualities include:"
           center
           mb="80px"
         />
-
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div

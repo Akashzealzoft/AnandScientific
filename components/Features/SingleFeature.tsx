@@ -15,7 +15,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           {paragraph}
         </p>
       </div>
-    </div>
+    </div>  
   );
 };
 
