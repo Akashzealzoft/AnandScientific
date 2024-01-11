@@ -16,7 +16,7 @@ const labdata: Lab[] = [
         type: "PCR Workstation",
         material: "Acrylic Glass",
         voltage: "Voltage: 220-240 Volt (v)",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Gel-Documentation-Machine.jpg"
 
     },
@@ -34,7 +34,7 @@ const labdata: Lab[] = [
         type: "Digital Portable Cyberscan",
         material: "Plastic",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -51,7 +51,7 @@ const labdata: Lab[] = [
         type: "Gel Documentation Machine",
         material: "Plastic",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -68,7 +68,7 @@ const labdata: Lab[] = [
         type: "Digital Portable Cyberscan",
         material: "Plastic",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -85,7 +85,7 @@ const labdata: Lab[] = [
         type: "Laboratory Top Loading Balance",
         material: "Plastic",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     }, {
@@ -101,7 +101,7 @@ const labdata: Lab[] = [
         type: "Oil Test Lab Centrifuge",
         material: "Mild Steel",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -118,7 +118,7 @@ const labdata: Lab[] = [
         type: "Paper Electrophoresis System",
         material: "Plastic",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -135,7 +135,7 @@ const labdata: Lab[] = [
         type: "Electromagnetic Stirrer",
         material: "Stainless Steel",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -152,7 +152,7 @@ const labdata: Lab[] = [
         type: "Double Beam Spectrophotometer",
         material: "Plastic",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -169,7 +169,7 @@ const labdata: Lab[] = [
         type: "Lab Centrifuge",
         material: "Stainless Steel",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -186,7 +186,7 @@ const labdata: Lab[] = [
         type: "Semi Micro Balance",
         material: "Plastic-Glass",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -203,7 +203,7 @@ const labdata: Lab[] = [
         type: "Laboratory Submarine Electrophoresis System",
         material: "Stainless Steel",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -220,7 +220,7 @@ const labdata: Lab[] = [
         type: "Multimag Magnetic Stirrer",
         material: "Stainless Steel",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -237,7 +237,7 @@ const labdata: Lab[] = [
         type: "Multimag Magnetic Stirrer",
         material: "Stainless Steel",
         voltage: "230 Volt (v)",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -254,7 +254,7 @@ const labdata: Lab[] = [
         type: "Blood Bank Centrifuge",
         material: "Plastic",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -272,7 +272,7 @@ const labdata: Lab[] = [
         type: "Digital Laboratory Balance",
         material: "Plastic-Glass",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -290,7 +290,7 @@ const labdata: Lab[] = [
         type: "",
         material: "Mild Steel",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -307,7 +307,7 @@ const labdata: Lab[] = [
         type: "Horizontal Electrophoresis System",
         material: "Plastic",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -324,7 +324,7 @@ const labdata: Lab[] = [
         type: "Multimag Magnetic Stirrer",
         material: "Stainless Steel",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -342,7 +342,7 @@ const labdata: Lab[] = [
         type: "Digital Flame Photometer",
         material: "",
         voltage: "",
-        href: "",
+        href: "", category: "lab",
         image: "/images/brands/Multimag-Magnetic-Stirrer.jpg"
 
     },
@@ -352,9 +352,9 @@ const labdata: Lab[] = [
 const phdetectorDatas: PhDetectorData[] =
     [
         {
-            id: 1,
+            id: 21,
             price: "Price: 4000 INR",
-            name: "PH Field Monitor",
+            name: "Digital PH Titrator",
             supply: "5000000 Per Month",
             delivery: "Ph Detector Delivery",
             color: "Blue",
@@ -366,69 +366,46 @@ const phdetectorDatas: PhDetectorData[] =
             controlmode: "Digital",
             material: "Plastic",
             voltage: "Ph Detector Voltage",
-            href: "",
+            href: "", category: "detector",
             image: "/images/phdetector/PH-Field-Monitor.jpg",
         },
         {
-            id: 2,
+            id: 22,
             price: "Price: 5000 INR",
-            name: "PH Field Monitor",
+            name: " Monitor",
             supply: "5000000 Per Month",
             delivery: "Ph Detector Delivery",
-            color: "Blue",
-            dimension: "Ph Detector Dimension",
-            size: "Ph Detector Size",
-            warranty: "Ph Detector Warranty",
-            type: "Ph Detector Type",
+            color: "White",
+            dimension: "",
+            size: "",
+            warranty: "",
+            type: "Digital PH Titrator",
             usage: "Ph Detector Usage",
             controlmode: "Digital",
             material: "Plastic",
-            voltage: "Ph Detector Voltage",
-            href: "",
+            voltage: "",
+            href: "", category: "detector",
             image: "/images/phdetector/PH-Field-Monitor.jpg",
         },
         {
-            id: 3,
-            price: "Price: 6000 INR",
-            name: "PH Field Monitor",
+            id: 23,
+            price: "Price: 4000 INR",
+            name: "PH Table Top Cyber Scan ",
             supply: "5000000 Per Month",
-            delivery: "Ph Detector Delivery",
-            color: "Blue",
-            dimension: "Ph Detector Dimension",
-            size: "Ph Detector Size",
-            warranty: "Ph Detector Warranty",
-            type: "Ph Detector Type",
-            usage: "Ph Detector Usage",
+            delivery: "1 Days",
+            color: "White",
+            dimension: "",
+            size: "",
+            warranty: "",
+            type: "PH Table Top Cyber Scan",
+            usage: "Lab Industry",
             controlmode: "Digital",
             material: "Plastic",
-            voltage: "Ph Detector Voltage",
-            href: "",
+            voltage: "",
+            href: "", category: "detector",
             image: "/images/phdetector/PH-Field-Monitor.jpg",
-        },
-        {
-            id: 4,
-            price: "Price: 7000 INR",
-            name: "PH Field Monitor",
-            supply: "5000000 Per Month",
-            delivery: "Ph Detector Delivery",
-            color: "Blue",
-            dimension: "Ph Detector Dimension",
-            size: "Ph Detector Size",
-            warranty: "Ph Detector Warranty",
-            type: "Ph Detector Type",
-            usage: "Ph Detector Usage",
-            controlmode: "Digital",
-            material: "Plastic",
-            voltage: "Ph Detector Voltage",
-            href: "",
-            image: "/images/phdetector/PH-Field-Monitor.jpg",
-        },
+        }
     ]
-
-
-
-
-
 
 
 export { labdata, phdetectorDatas }

@@ -1,8 +1,22 @@
+'use client'
+import React, { useState } from "react";
 import Link from "next/link";
+import Button from "../Button/Button";
+import { sendInquiry, requestCall } from "@/components/Button/buttonFunction";
+import Popup from "../Popup/Popup";
 
 const Hero = () => {
+  const [showPopup, setShowPopup] = useState(false)
+  const requestCall = () => {
+    console.log("Call request sent")
+    setShowPopup(true)
+  }
+  const closePopup = () => {
+    setShowPopup(false);
+  };
   return (
     <>
+      {showPopup && <Popup onClose={closePopup} />}
       <section
         id="home"
         className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
@@ -21,20 +35,13 @@ const Hero = () => {
                   Presenting Modern Technology & Standards of Heavy Duty Lab Centrifuge, PH Field Monitor, Water Proof PH Meter, Microprocessor Viscometer, Metallurgical Microscope, Blood Pressure Monitor, etc.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href=""
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    Call ME
-                  </Link>
-                  <Link
-                    href=""
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Send Enquiry
-                  </Link>
+
+                  <Button className="" buttonContent="Send Inquiry" style=" text-current hover:bg-blue-500 t font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                    onClick={sendInquiry} />
+                  <Button className="" buttonContent="Request Call" style="" onClick={requestCall} />
+
                 </div>
-              </div>
+              </div>  
             </div>
           </div>
         </div>

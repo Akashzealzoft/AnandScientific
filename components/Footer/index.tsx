@@ -15,24 +15,25 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo/logo-2.svg"
+                    src="/images/logo/Anand-Black-Logo.png"
                     alt="logo"
                     className="w-full dark:hidden"
-                    width={140}
-                    height={30}
+                    width={100}
+                    height={20}
                   />
                   <Image
-                    src="/images/logo/logo.svg"
+                    src="/images/logo/Anand-White-Logo.png"
                     alt="logo"
                     className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
+                    width={100}
+                    height={20}
                   />
+
                 </Link>
                 <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  No 123, Balamurugan Garden, Thuraipakkam, Chennai - 600097, Tamil Nadu, India
                 </p>
+                <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">Phone :08037696236</p>
                 <div className="flex items-center">
                   <a
                     href="/"
@@ -197,14 +198,36 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
-              Template by UIdeck and{" "}
-              <a href="https://nextjstemplates.com" rel="nofollow noopener">
-                Next.js Templates
-              </a>
-            </p>
+          <div className="h-px w-full bg-gradient-to-r from-transparent  via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
+          <div className="py-8 flex justify-between">
+            <Link href="https://www.zealzoft.com" className="dark:block hidden" target="_blank">
+              <p className="text-center text-base text-body-color dark:text-white">
+                <Image
+                  src='/images/footerzealzoft/zealzoft_logoXname_white.png'
+                  width={100}
+                  height={80}
+                  alt="Trade India Member"
+                />
+              </p>
+            </Link>
+            <Link href="https://www.zealzoft.com" className="dark:hidden" target="_blank">
+              <p className="text-center text-base text-body-color dark:text-white">
+                <Image
+                  src='/images/footerzealzoft/zealzoft_logoXname_black.png'
+                  width={100}
+                  height={80}
+                  alt="Trade India Member"
+                />
+              </p>
+            </Link>
+            {/* <div className="text-xs">
+              <p>
+                ANAND SCIENTIFIC COMPANY All Rights Reserved.<a href="https://www.tradeindia.com/about-us/terms/terms_01.html">(Terms of Use)</a>
+              </p>
+              <p>Developed and Managed by <a href="https://www.tradeindia.com/about-us/">Infocom Network Private Limited.</a></p>
+
+            </div> */}
+
           </div>
         </div>
         <div className="absolute right-0 top-14 z-[-1]">

@@ -24,6 +24,11 @@ const Video = () => {
 
           ]}
           teamTitle="Our Team"
+          deal="Vendors & Brands We Deal In"
+          infra="Our Infrastructure"
+          infraDescription="We have a reliable infra facility for the storage of procured products. Our warehousing area is maintained in a systematic manner to keep a bulk stock stored safely for a long duration. With this facility, we are able to support our customers even during the bulk or urgent demands very conveniently."
+          dealContent="Our company has made & maintained a healthy relationship with some prestigious organizations of the laboratory ware industry. These companies provide us with high quality developed products as well as raw inputs that are used by production experts in making a range of PH Field Monitor, Heavy Duty Lab Centrifuge, Microprocessor Viscometer, Water Proof PH Meter, etc."
+          dealContent1="Every vendor of our firm is chosen after conducting a series of surveys, researches and case studies on the grounds of their market reputation, product quality, track records, clarity in deals, competitive rates, etc. With their support, we are dealing with some of the top brands in the domain that are Anand, Eutech, Remi & Orange."
           teamDescription="Blessed by a team of self motivated & intelligent people, we have established a reputed position for ourselves in the market. All the team members are well-updated with the market & its constantly changing trends to run trading operations in an efficient & fluent manner. Their main qualities include:"
           center
           mb="80px"
@@ -73,3 +78,5 @@ const Video = () => {
 };
 
 export default Video;
+
+

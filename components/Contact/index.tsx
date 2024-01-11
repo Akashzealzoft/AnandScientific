@@ -1,6 +1,65 @@
+'use client'
+import React, { useState, useRef } from "react";
 import NewsLatterBox from "./NewsLatterBox";
+import emailjs from "@emailjs/browser";
+
+
+
 
 const Contact = () => {
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    contact: "",
+    message: ""
+
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(form.name, form.contact, form.message)
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_l3znqmt", // Your service ID
+        "template_vr4szq7",
+        {
+          from_name: form.name,
+          to_name: "Sulthanul Arief",
+          to_email: "sulthanularief143@gmail.com",
+          ...form
+        },
+        "p5fbNrN9RBK53UrcI" // Your emailjs public key
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert(`Thank you ${form.contact}. I will get back to you as soon as possible.`);
+          setForm({
+            ...form,
+            contact: "",
+
+          });
+
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
+  };
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -12,12 +71,12 @@ const Contact = () => {
               "
             >
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-              ANAND SCIENTIFIC COMPANY
+                ANAND SCIENTIFIC COMPANY
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via phone
               </p>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -28,6 +87,7 @@ const Contact = () => {
                         Your Name
                       </label>
                       <input
+                        onChange={handleChange}
                         type="text"
                         placeholder="Enter your name"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
@@ -43,6 +103,7 @@ const Contact = () => {
                         Mobile Number
                       </label>
                       <input
+                        onChange={handleChange}
                         type="phone"
                         placeholder="Enter your mobile number"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
@@ -58,6 +119,7 @@ const Contact = () => {
                         Describe your requirements in details
                       </label>
                       <textarea
+                        onChange={handleChange}
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"

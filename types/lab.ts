@@ -14,6 +14,7 @@ export type Lab = {
   voltage: string
   href: string;
   image: string;
+  category: string;
 };
 export type PhDetectorData = {
   controlmode: string;
@@ -32,6 +33,7 @@ export type PhDetectorData = {
   voltage: string
   href: string;
   image: string;
+  category: string;
 };
 
 export type Meter = {

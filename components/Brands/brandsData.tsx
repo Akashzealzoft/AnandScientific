@@ -1,35 +1,36 @@
-import { Brand } from "@/types/brand";
+import { popularProducts } from "@/types/brand";
+import { labdata } from "@/app/Data";
 
-const brandsData: Brand[] = [
+const popularproducts: popularProducts[] = [
   {
     id: 1,
-    name: "UIdeck",
-    href: "https://uideck.com",
+    name: "Multimag Magnetic Stirrer",
+    href: "product/13",
     image: "/images/brands/Multimag-Magnetic-Stirrer.jpg",
     imageLight: "/images/brands/Multimag-Magnetic-Stirrer.jpg",
   },
   {
     id: 2,
-    name: "Tailgrids",
-    href: "https://tailgrids.com",
+    name: "Gel documentation machine",
+    href: "product/3",
     image: "/images/brands/Gel-Documentation-Machine.jpg",
     imageLight: "/images/brands/Gel-Documentation-Machine.jpg",
   },
   {
     id: 3,
-    name: "Lineicons",
-    href: "https://lineicons.com",
+    name: "Oil test Lab centrifuge",
+    href: "product/1",
     image: "/images/brands/Oil-Test-Lab-Centrifuge.jpg",
     imageLight: "/images/brands/Oil-Test-Lab-Centrifuge.jpg",
   },
   {
     id: 4,
-    name: "Ayro UI",
-    href: "https://ayroui.com",
+    name: "Heavy duty lab centrifuge",
+    href: "product/10",
     image: "/images/brands/Heavy-Duty-Lab-Centrifuge.jpg",
     imageLight: "/images/brands/Heavy-Duty-Lab-Centrifuge.jpg",
   },
 
 ];
 
-export default brandsData;
+export default popularproducts;
