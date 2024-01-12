@@ -10,7 +10,7 @@ import Popup from "@/components/Popup/Popup";
 
 const Laboratory = () => {
   return (
-    <div className="container my-20 flex flex-wrap justify-center">
+    <div className="container my-20 flex flex-wrap justify-evenly">
       {labdata.map((lab) => (
         <SingleLab key={lab.id} lab={lab} />
       ))}

@@ -32,6 +32,9 @@ module.exports = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      width: {
+        '500': '500px'
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
