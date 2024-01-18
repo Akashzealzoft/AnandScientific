@@ -20,7 +20,17 @@ const AboutSectionOne = () => {
               <SectionTitle
                 title="Key Facts of Anand Scientific Company"
                 paragraph=""
+                paragraph1=""
+                teamTitle=""
+                teamDescription=""
+                sectionTeamList=""
+                deal=""
+                dealContent1=""
+                dealContent=""
+                infra=""
+                infraDescription=""
                 mb="44px"
+                center
               />
 
               <div
