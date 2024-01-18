@@ -1,7 +1,6 @@
 const Title = ({ children }) => {
   return <h3 className="text-lg mt-10 dark:text-white font-semibold mb-2">{children}</h3>;
 };
-
 const SectionTitle = ({
   title,
   paragraph,
@@ -19,15 +18,15 @@ const SectionTitle = ({
   mb = "8",
 }) => {
   return (
-    <div className={`w-full  ${center ? "text-left" : ""}`} style={{ maxWidth: width, marginBottom: mb }}>
+    <div className={`w-full ${center ? "text-left" : ""}`} style={{ maxWidth: width, marginBottom: mb }}>
       <h2 className="text-5xl text-center font-bold mb-4">{title}</h2>
       <p className="text-gray-700 mb-4">{paragraph}</p>
       <p className="text-gray-700 mb-4">{paragraph1}</p>
       <div className="container text-gray-700">
         <Title>{teamTitle}</Title>
-        <p className="">{teamDescription}</p>
+        <p>{teamDescription}</p>
         <ul className="list-disc ml-5 text-gray-700">
-          {sectionTeamList?.map((teamListItem) => (
+          {Array.isArray(sectionTeamList) && sectionTeamList.map((teamListItem) => (
             <li key={teamListItem.id}>{teamListItem.teamList}</li>
           ))}
         </ul>
@@ -40,5 +39,4 @@ const SectionTitle = ({
     </div>
   );
 };
-
 export default SectionTitle;
