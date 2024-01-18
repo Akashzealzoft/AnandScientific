@@ -30,7 +30,8 @@ const AboutSectionOne = () => {
                 infra=""
                 infraDescription=""
                 mb="44px"
-                center
+                center={true}
+                width=""
               />
 
               <div
