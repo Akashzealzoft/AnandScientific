@@ -7,6 +7,8 @@ import Button from '@/components/Button/Button';
 import { sendInquiry, requestCall } from '@/components/Button/buttonFunction';
 import Popup from '@/components/Popup/Popup';
 const allProducts = [...labdata, ...phdetectorDatas];
+// Rename the top-level function to avoid conflicts
+
 const RelatedProducts = ({ relatedProducts }) => (
     <>
         <h2 className="text-2xl flex justify-center items-center text-black font-bold mb-4 dark:text-white">Related Products</h2>
@@ -124,7 +126,7 @@ const Page = ({ params }) => {
 
             {/* Related Products Section */}
             <RelatedProducts relatedProducts={relatedProducts} />
-       
+
         </>
     );
 };

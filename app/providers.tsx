@@ -4,9 +4,12 @@
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    // <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
+    <>
+      {children}
+    </>
 
-    // </ThemeProvider>
-    { children }
   );
 }
+// <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
+
+{/* </ThemeProvider> */ }
