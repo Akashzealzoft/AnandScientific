@@ -45,7 +45,7 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
                     setForm({
                         contact: "",
                     });
-                    onClose(); // Close the popup after sending the email
+                    onClose();
                 },
                 (error) => {
                     setLoading(false);
@@ -64,7 +64,7 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
                         <div className="sm:flex sm:items-start">
                             <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                 <h3 className="text-lg leading-6 font-medium text-gray-900">
-                                    Add a mobile number to receive a call from "ANAND SCIENTIFIC COMPANY"
+                                    Add a mobile number to receive a call from  &quot;ANAND SCIENTIFIC COMPANY&quot; 
                                 </h3>
                                 <div className="mt-2">
                                     <input
