@@ -124,6 +124,7 @@ const Page = ({ params }) => {
 
             {/* Related Products Section */}
             <RelatedProducts relatedProducts={relatedProducts} />
+       
         </>
     );
 };
