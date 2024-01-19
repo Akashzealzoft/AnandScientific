@@ -1,4 +1,6 @@
-'use client'
+
+'use client';
+
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -48,11 +50,13 @@ const RelatedProducts = ({ relatedProducts }) => (
 
 const Page = ({ params }) => {
     const [showPopup, setShowPopup] = useState(false);
-
-    const requestCall = () => {
+    const handleCallRequest = () => {
         console.log("Call request sent");
         setShowPopup(true);
     };
+    // Inside the Page component
+    const requestCall = handleCallRequest;
+
 
     const closePopup = () => {
         setShowPopup(false);
@@ -132,7 +136,5 @@ const Page = ({ params }) => {
 };
 
 export default Page;
-
-
 
 
